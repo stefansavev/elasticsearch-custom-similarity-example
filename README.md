@@ -37,3 +37,53 @@ Steps:
    cd example
    ./examples.sh
   </pre>    
+
+9. Check the output of ./examples.sh
+
+  <pre>
+      query: page_god
+      "_source":{"page_id":"page_god"}
+      "_source":{"page_id":"page_jesus"}
+      "_source":{"page_id":"page_christian"}
+      "_source":{"page_id":"page_believe"}
+      "_source":{"page_id":"page_him"}
+      "_source":{"page_id":"page_life"}
+      "_source":{"page_id":"page_bible"}
+      "_source":{"page_id":"page_christians"}
+      "_source":{"page_id":"page_our"}
+      "_source":{"page_id":"page_must"}
+      "_source":{"page_id":"page_his"}
+      "_source":{"page_id":"page_fact"}
+      "_source":{"page_id":"page_apr"}
+      "_source":{"page_id":"page_things"}
+      "_source":{"page_id":"page_true"}
+      "_source":{"page_id":"page_christ"}
+      "_source":{"page_id":"page_man"}
+      "_source":{"page_id":"page_say"}
+      "_source":{"page_id":"page_come"}
+      "_source":{"page_id":"page_being"}
+  </pre>
+  
+  <pre>
+  query: page_encryption
+      "_source":{"page_id":"page_encryption"}
+      "_source":{"page_id":"page_clipper"}
+      "_source":{"page_id":"page_chip"}
+      "_source":{"page_id":"page_key"}
+      "_source":{"page_id":"page_keys"}
+      "_source":{"page_id":"page_secure"}
+      "_source":{"page_id":"page_algorithm"}
+      "_source":{"page_id":"page_escrow"}
+      "_source":{"page_id":"page_security"}
+      "_source":{"page_id":"page_secret"}
+      "_source":{"page_id":"page_crypto"}
+      "_source":{"page_id":"page_government"}
+      "_source":{"page_id":"page_house"}
+      "_source":{"page_id":"page_wiretap"}
+      "_source":{"page_id":"page_announcement"}
+      "_source":{"page_id":"page_privacy"}
+      "_source":{"page_id":"page_nsa"}
+      "_source":{"page_id":"page_white"}
+      "_source":{"page_id":"page_encrypted"}
+      "_source":{"page_id":"page_pgp"}
+  </pre>
