@@ -1,6 +1,8 @@
 # elasticsearch-custom-similarity-example
 
-Steps:
+<a href="http://stefansavev.com/blog/custom-similarity-for-elasticsearch/">Blog post describing the stages to create the custom similarity plugin</a>
+
+Steps to run the code:
 
 1. mvn clean install
 
