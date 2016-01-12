@@ -21,10 +21,10 @@ Steps:
    cd example
    ./create_index.sh
 
-##Load the dataset into elasticsearch
-cd example
-./populate_collection.sh
+7. Load the dataset into elasticsearch
+   cd example
+   ./populate_collection.sh
 
-##Run the example queries
-cd example
-./examples.sh
+8. Run the example queries
+   cd example
+   ./examples.sh
