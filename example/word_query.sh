@@ -1,4 +1,14 @@
-WORD=$1 #"video"
+#!/bin/bash
+
+set -eu
+
+if [ "$#" -ne 1 ]; then
+	echo "Illegal number of parameters"
+    	echo "Example: ./word_query.sh page_encryption"
+	exit 1
+fi
+
+WORD=$1
 
 cat <<EOF > query1.tmp
 curl -XGET 'localhost:9200/page_clicks/pages/_search' -d'
