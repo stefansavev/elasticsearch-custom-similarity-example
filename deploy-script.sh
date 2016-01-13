@@ -31,9 +31,6 @@ fi
 
 ls $FULL_JAR_FILE_PATH
 
-#cp /home/stefan2/kaggle/taste-es/my-plugin/target/releases/my-plugin-1.0.0.zip .
-#unzip my-plugin-1.0.0.zip
-#./plugin remove scala-es
 echo "Checking if a previous installation of the plugin exists"
 LIST_RESULT=$(${PLUGIN_CMD} list | grep "${PLUGIN_NAME}")
 echo $LIST_RESULT
