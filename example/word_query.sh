@@ -34,10 +34,21 @@ curl -XGET 'localhost:9200/page_clicks/pages/_search?pretty' -d'
         "match" : {
 EOF
 
-cat query1.result | grep "user_ids" >> query2.tmp
+
+
+awk 'BEGIN { FS = "\"" } ; {
+        for(i=1; i<=NF; i++) {
+                tmp=match($i, /user_ids/)
+                if(tmp) {
+                        print ("\"user_ids\" : \"", $(i + 2),"\"")
+			break	
+                }
+        }
+}' query1.result >> query2.tmp
+
+#echo $USER_IDS
 
 cat <<EOF >> query2.tmp
-
         }
   },
   "aggs": {}
@@ -48,7 +59,7 @@ EOF
 chmod +x ./query2.tmp
 ./query2.tmp > query2.result
 
-cat query2.result | grep "_source"
+cat query2.result | grep "_source" | sed s/\"_source\"\://
 
 
 
