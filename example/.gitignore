@@ -3,3 +3,5 @@ query1.tmp
 query1.result
 query2.tmp
 query2.result
+run-multiple-queries.tmp
+multiple-query.results
